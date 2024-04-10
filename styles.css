@@ -4,13 +4,13 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fce4ec; /* Màu hồng nhạt cho body */
+    background-color: #f8f1e8; /* Màu hồng nhạt cho body */
     color: #cc0000; /* Màu đỏ cho chữ */
   }
   
   header {
-    background-color: #fff; /* Màu trắng cho header */
-    padding: 10px;
+    background-color: #FFFFFF; /* Màu trắng cho header */
+    padding: 10px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -105,13 +105,21 @@
   .order-btn:hover {
     transform: translateY(2px); /* Hiệu ứng nhấn xuống khi di chuột vào */
   }
-  
+  @font-face {
+    font-family: newfont;
+    src: url(./TOMO\ Pillo\ Normal.otf);
+  }
   .get-in-touch {
-    background-color: #fce4ec; /* Màu hồng nhạt cho nền */
+    height:96px;
+    width: 678.79px;
+    background-color:#f8f1e8; /* Màu hồng nhạt cho body */
+    ; /* Màu hồng nhạt cho nền */
     text-align: center; /* Căn giữa nội dung */
-    padding: 40px 0; /* Khoảng cách padding */
-    font-size: 90px; /* Cỡ chữ */
-	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 40px ; /* Khoảng cách padding */
+    margin: 0 auto;
+    font-size: 5vw; /* Cỡ chữ */
+    font-family: newfont;
+    
   }
 
   .flex-container {
@@ -119,10 +127,16 @@
   }
 
  
-  .contact-info,
+  .contact-info{
+    background-color: #f8f1e8; /* Màu hồng nhạt cho nền */
+    padding: 30px 120px 30px 30px;
+    width: 40%;
+    height: 100%;
+    color: black;
+  }
   .problem {
-	background-color: #fce4ec; /* Màu hồng nhạt cho nền */
-	padding: 20px;
+	background-color: #f8f1e8; /* Màu hồng nhạt cho nền */
+	padding: 40px;
 	width: 50%; /* Đặt chiều rộng là 50% */
 	margin: 0 auto; /* Để căn giữa */
 	color: black;
@@ -158,11 +172,9 @@
 
 
   .problem {
-	background-color: #ffa5c3; /* Màu hồng đậm hơn */
 	padding-right: 20px;
-	
+	background-color: #f8debe;
 	margin-right: 400px; /* Canh lề phải tự động */
-	width: 55%; /* Giảm kích thước bề ngang */
   }
 
   .select-box {
@@ -321,4 +333,14 @@ footer .order-btn:hover {
   transform: translateY(-100%);
   transition: transform 2s ease;
 }
-
+.next-btn{
+  background-color: #cc0000; /* Màu đỏ đậm */
+    color: #fff; /* Chữ trắng */
+    margin-top:10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi */
+}

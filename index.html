@@ -29,7 +29,7 @@
 
 <!-- Thêm dòng "GET IN TOUCH" dưới phần header -->
 <div class="container">
-  <div class="get-in-touch">
+  <div  class="get-in-touch">
     GET IN TOUCH
   </div>
   
@@ -56,21 +56,24 @@
     </div>
   
     <div class="problem">
-      <p><strong>I HAVE A PROBLEM WITH AN ORDER</strong></p>
-      <p>WHERE DID YOU ORDER FROM?</p>
-      <div class="select-box">
-        <select>
-          <option value="Uber Eats">Uber Eats</option>
-          <option value="Knees to chin Ste Catherine">Knees to chin Ste Catherine</option>
-          <option value="Knees to chin Bailli">Knees to chin Bailli</option>
-          <option value="Knees to chin St Boniface">Knees to chin St Boniface</option>
-        </select>
-      </div>
-      <div class="additional-info">
-        <p><strong>FOR ANY PROBLEM WITH AN ORDER THROUGH UBER EATS</strong></p>
-        <p>You should report your issue directly in the Uber Eats app Help section</p>
-      </div>
+      <form id="orderForm" action="process_order.php" method="post">
+        <p><strong>I HAVE A PROBLEM WITH AN ORDER</strong></p>
+        <p>WHERE DID YOU ORDER FROM?</p>
+        <div class="select-box">
+          <select name="orderSource">
+            <option value="Uber Eats">Uber Eats</option>
+            <option value="Knees to chin Ste Catherine">Knees to chin Ste Catherine</option>
+            <option value="Knees to chin Bailli">Knees to chin Bailli</option>
+            <option value="Knees to chin St Boniface">Knees to chin St Boniface</option>
+          </select>
+        </div>
+        <div class="additional-info">
+          <p><strong>FOR ANY PROBLEM WITH AN ORDER THROUGH UBER EATS</strong></p>
+          <p>You should report your issue directly in the Uber Eats app Help section</p>
+        </div>
+      </form>
     </div>
+    
   </div>
   
 <div class="footer-wrapper">
@@ -113,6 +116,6 @@
 </nav>
 
         
-<script src="/index.js"></script>
+<script src="./index.js"></script>
 </body>
 </html>
